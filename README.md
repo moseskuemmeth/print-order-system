@@ -15,5 +15,5 @@ Kleine Web-Anwendung zur Verwaltung von Druckaufträgen.
 ## Starten
 
 ```bash
-npm install
+npm install express cors
 node server.js
