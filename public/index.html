@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device, initial-scale=1.0" />
+    <title>Print Order System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Print Order System</h1>
+        <p class="subtitle">Projekt-Demo für Web-App, REST API und IT-Prozesse</p>
+
+        <section class="card">
+            <h2>Neuen Auftrag anlegen</h2>
+
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Kundenname</label>
+                    <input type="text" id="customerName" placeholder="z.B. Alex Fischer" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Produkt</label>
+                    <select id="product" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="Flyer">Flyer</option>
+                        <option value="Poster">Poster</option>
+                        <option value="Visitenkarte">Visitenkarte</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Menge</label>
+                    <input type="number" id="quantity" min="1" placeholder="z.B. 100" required />
+                </div>
+
+                <button type="submit">Auftrag erstellen</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="card">
+            <h2>Aufträge</h2>
+            <div id="ordersList" class="orders-list"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
